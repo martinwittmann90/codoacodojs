@@ -303,7 +303,6 @@
   align-items: center;
   margin: 0;
 }
-
 .cardTickets {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -314,23 +313,19 @@
   padding: 20px;
   margin: 10px;
 }
-
 .cardTickets h2 {
   font-size: 24px;
   margin-top: 10px;
 }
-
 .cardTickets p {
   font-size: 16px;
   margin: 10px 0;
 }
-
 .estudiante {
   border-style: solid;
   border-width: 2px;
   border-color: blue;
 }
-
 .trainee {
   border-style: solid;
   border-width: 2px;
@@ -340,6 +335,39 @@
   border-style: solid;
   border-width: 2px;
   border-color: #ffc107;
+}
+
+/* FORM COMPRA */
+.formCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formContainerCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainerCompraFilas {
+  display: flex;
+  margin: 5px;
+}
+.formContainerCompraLabels {
+  margin-right: 10px;
+}
+.formContainerCompraButton {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #25a342;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+.formContainerCompraSelect {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
 }
 
 /* ★━━━━━━━━━━━★ FOOTER ★━━━━━━━━━━━★ */

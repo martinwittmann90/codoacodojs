@@ -247,25 +247,36 @@
         </div>
       </div>
       <h2 class="titulo-gral">VENTA<span>VALOR DE TICKET $200</span></h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required /><br /><br />
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required /><br /><br />
-        <label for="correo">Correo:</label>
-        <input type="text" id="correo" name="correo" required /><br /><br />
-        <label for="cantidad">Cantidad:</label>
-        <input type="number" id="cantidad" name="cantidad" required /><br /><br />
-        <label for="categoria">Categoría:</label>
-        <select id="categoria" name="categoria">
-          <option value="Estudiante">Estudiante</option>
-          <option value="Trainee">Trainee</option>
-          <option value="Junior">Junior</option></select
-        ><br /><br />
-        <div id="resultado">Total a pagar $:</div>
-        <button type="button" onclick="borrar()">Borrar</button>
-        <button type="button" onclick="calcularTotal()">Resumen</button>
-      </form>
+      <div class="formContainerCompra">
+        <form class="formCompra">
+            <div class="formContainerCompraFilas">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
+            </div>
+            <div class="formContainerCompraFilas">
+                <input type="text" id="correo" name="correo" placeholder="Correo" required />
+            </div>
+            <div class="formContainerCompraFilas">
+                <label class="formContainerCompraLabels" for="cantidad">Cantidad:</label>
+                <label class="formContainerCompraLabels" for="categoria">Categoría:</label>
+            </div>
+            <div class="formContainerCompraFilas">
+                <input type="number" id="cantidad" name="cantidad" placeholder="0" required />
+                <select class="formContainerCompraSelect" id="categoria" name="categoria">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Trainee">Trainee</option>
+                    <option value="Junior">Junior</option>
+                </select>
+            </div>
+            <div class="formContainerCompraFilas">
+                <div id="resultado">Total a pagar $:</div>
+            </div>
+            <div class="formContainerCompraFilas">
+                <button class="formContainerCompraButton" type="button" onclick="borrar()">Borrar</button>
+                <button class="formContainerCompraButton" type="button" onclick="calcularTotal()">Resumen</button>
+            </div>
+        </form>
+    </div>
     </section>
     <footer id="main-footer">
       <div class="containerForm">
@@ -299,5 +310,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
+    <script></script>
   </body>
 </html>
