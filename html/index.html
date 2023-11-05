@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/index.js" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/js/index.js" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -134,7 +134,7 @@
       <h2 class="titulo-gral">Conoce a los <span>oradores</span></h2>
       <div class="cardDisplay">
         <div class="card">
-          <img src="images/steve.jpg" class="cardImage" alt="..." />
+          <img src="/images/steve.jpg" class="cardImage" alt="..." />
           <div class="cardBody">
             <div>
               <span class="badgeJavascript">Javascript</span>
@@ -148,7 +148,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="images/bill.jpg" class="cardImage" alt="..." />
+          <img src="/images/bill.jpg" class="cardImage" alt="..." />
           <div class="cardBody">
             <div>
               <span class="badgeJavascript">Javascript</span>
@@ -162,7 +162,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="images/ada.jpeg" class="cardImage" alt="..." />
+          <img src="/images/ada.jpeg" class="cardImage" alt="..." />
           <div class="cardBody">
             <div>
               <span class="badgeNegocios">Negocios</span>
@@ -180,7 +180,7 @@
     <section id="lugar">
       <div class="lugarContainer">
         <div class="lugarSubContainer">
-          <img src="images/honolulu.jpg" alt="Honolulu" class="lugarImg" />
+          <img src="/images/honolulu.jpg" alt="Honolulu" class="lugarImg" />
         </div>
         <div class="lugarTextContainer backgroundAside">
           <h2>Bs As - Octubre</h2>
@@ -249,34 +249,34 @@
       <h2 class="titulo-gral">VENTA<span>VALOR DE TICKET $200</span></h2>
       <div class="formContainerCompra">
         <form class="formCompra">
-            <div class="formContainerCompraFilas">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
-            </div>
-            <div class="formContainerCompraFilas">
-                <input type="text" id="correo" name="correo" placeholder="Correo" required />
-            </div>
-            <div class="formContainerCompraFilas">
-                <label class="formContainerCompraLabels" for="cantidad">Cantidad:</label>
-                <label class="formContainerCompraLabels" for="categoria">Categoría:</label>
-            </div>
-            <div class="formContainerCompraFilas">
-                <input type="number" id="cantidad" name="cantidad" placeholder="0" required />
-                <select class="formContainerCompraSelect" id="categoria" name="categoria">
-                    <option value="Estudiante">Estudiante</option>
-                    <option value="Trainee">Trainee</option>
-                    <option value="Junior">Junior</option>
-                </select>
-            </div>
-            <div class="formContainerCompraFilas">
-                <div id="resultado">Total a pagar $:</div>
-            </div>
-            <div class="formContainerCompraFilas">
-                <button class="formContainerCompraButton" type="button" onclick="borrar()">Borrar</button>
-                <button class="formContainerCompraButton" type="button" onclick="calcularTotal()">Resumen</button>
-            </div>
+          <div class="formContainerCompraFilas">
+            <input class="formInputsCompra" type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+            <input class="formInputsCompra" type="text" id="apellido" name="apellido" placeholder="Apellido" required />
+          </div>
+          <div class="formContainerCompraFilas">
+            <input class="formInputsCompra" type="text" id="correo" name="correo" placeholder="Correo" required />
+          </div>
+          <div class="formContainerCompraFilas">
+            <label class="formContainerCompraLabels" for="cantidad">Cantidad:</label>
+            <label class="formContainerCompraLabels" for="categoria">Categoría:</label>
+          </div>
+          <div class="formContainerCompraFilas">
+            <input class="formInputsCompra" type="number" id="cantidad" name="cantidad" placeholder="0" required />
+            <select class="formContainerCompraSelect" id="categoria" name="categoria">
+              <option value="Estudiante">Estudiante</option>
+              <option value="Trainee">Trainee</option>
+              <option value="Junior">Junior</option>
+            </select>
+          </div>
+          <div class="formContainerCompraFilas">
+            <div id="resultado">Total a pagar $:</div>
+          </div>
+          <div class="formContainerCompraFilas">
+            <button class="formContainerCompraButton" type="button" onclick="borrar()">Borrar</button>
+            <button class="formContainerCompraButton" type="button" onclick="calcularTotal()">Resumen</button>
+          </div>
         </form>
-    </div>
+      </div>
     </section>
     <footer id="main-footer">
       <div class="containerForm">
@@ -310,7 +310,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="/js/index.js"></script>
     <script></script>
   </body>
 </html>
